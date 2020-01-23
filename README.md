@@ -1,50 +1,25 @@
-# sr_project2
-# Project Overview
+# sr_project2 Overview
 
+## Project Description
 
-## Project Name
+Use this section to describe your project and what API or APIs it will utilize. List any relevant links, including the url to your live, deployed site.
 
-**Project decription:** Use this section to describe your project and what API or APIs it will utilize. List any relevant links, including the url to your live, deployed site.
+Live App:
 
-## API Snippet
+## Project Schedule
 
-```
-Paste a snippet received from a call to your API that shows the shape of the data
-```
+This schedule will be used to keep track of your progress throughout the week and align with our expectations.  
 
-## Wireframes
+You are **responsible** for scheduling time with your squad to seek approval for each deliverable by the end of the corresponding day, excluding `Saturday` and `Sunday`.
 
-Display all wireframes here with any neccessary descriptions.
-
-### MVP
-
-Carefully decided what is placed into your MVP as the client will expect this functionality to be implemented upon project completion.  
-
-#### MVP EXAMPLE:
-- Find and use external api 
-- Render data on page 
-- Allow user to choose favorites 
-- Save their choices in firebase
-
-### Post-MVP
-
-List any additional functionality you would like to implement once MVP has been reached.
-
-#### PostMVP EXAMPLE:
-- Add user auth
-
-## React Component Hierarchy
-
-Include an image of your component hierarchy that shows the data flow and architectural design of your app.
-
-## Components
-
-Based on the initial logic defined in the previous section, try to breakdown the logic further into stateless/stateful components. 
-
-| Component | Description |Type |
-| --- | --- | --- |
-| Header | The Header receives props that render multiple nav titles and links | Functional |
-| Main | This component houses multiple rendered views through React Router and controls data received from the initial API call in state | Class |
+|  Day | Deliverable | Status
+|---|---| ---|
+|Jan 24th| Project Pitch / Wireframes / Priority Matrix / Functional Components | Incomplete
+|Jan 27th| Core Application Structure (HTML, CSS, etc.) | Incomplete
+|Jan 28th| Pseudocode / actual code | Incomplete
+|Jan 29th| Initial Clickable Model  | Incomplete
+|Jan 30th| MVP | Incomplete
+|Jan 31tst| Present | Incomplete
 
 ## Priority Matrix
 
@@ -61,20 +36,39 @@ Timeframes are key in the development cycle. You have limited time to code and s
 | Working with API | H | 3hrs| 2.5hrs | 2.5hrs |
 | Total | H | 6hrs| 5hrs | 5hrs |
 
-## Project Schedule
+## Wireframes
 
-This schedule will be used to keep track of your progress throughout the week and align with our expectations.  
+Display all wireframes here with any neccessary descriptions.
 
-You are **responsible** for scheduling time with your squad to seek approval for each deliverable by the end of the corresponding day, excluding `Saturday` and `Sunday`.
+## API Snippet
 
-|  Day | Deliverable | Status
-|---|---| ---|
-|Jan 24th| Project Pitch / Wireframes / Priority Matrix / Functional Components | Incomplete
-|Jan 27th| Core Application Structure (HTML, CSS, etc.) | Incomplete
-|Jan 28th| Pseudocode / actual code | Incomplete
-|Jan 29th| Initial Clickable Model  | Incomplete
-|Jan 30th| MVP | Incomplete
-|Jan 31tst| Present | Incomplete
+```
+Paste a snippet received from a call to your API that shows the shape of the data
+```
+
+### MVP
+
+- Find and use external api 
+- Render data on page 
+- Allow user to choose favorites 
+- Save their choices in firebase
+
+### Post-MVP
+
+- Add user auth
+
+## React Component Hierarchy
+
+Include an image of your component hierarchy that shows the data flow and architectural design of your app.
+
+## Components
+
+Based on the initial logic defined in the previous section, try to breakdown the logic further into stateless/stateful components. 
+
+| Component | Description |Type |
+| --- | --- | --- |
+| Header | The Header receives props that render multiple nav titles and links | Functional |
+| Main | This component houses multiple rendered views through React Router and controls data received from the initial API call in state | Class |
 
 ## Additional Libraries
 
