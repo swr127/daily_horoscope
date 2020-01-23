@@ -8,14 +8,10 @@ Live App: TBC!
 
 ## Project Schedule
 
-This schedule will be used to keep track of your progress throughout the week and align with our expectations.  
-
-You are **responsible** for scheduling time with your squad to seek approval for each deliverable by the end of the corresponding day, excluding `Saturday` and `Sunday`.
-
 |  Day | Deliverable | Status
 |---|---| ---|
 |Jan 24th| Whiteboard & code core application structure (REACT & CSS) | Incomplete
-|Jan 27th| Fetch data from API & pass to data to REACT components | Incomplete
+|Jan 27th| Fetch data from API & pass data to REACT components | Incomplete
 |Jan 28th| Render data from REACT components onto webpage | Incomplete
 |Jan 29th| Create routes and code CSS styling | Incomplete
 |Jan 30th| Finish MVP and work on Post-MVP | Incomplete
@@ -23,7 +19,7 @@ You are **responsible** for scheduling time with your squad to seek approval for
 
 ## Priority Matrix
 
-Include an image of your Priority Matrix (X is time and Y is priority)
+<a href="https://imgur.com/9yuQgia"><img src="https://i.imgur.com/9yuQgia.jpg" title="source: imgur.com" /></a>
 
 ## Timeframes
 
@@ -34,14 +30,18 @@ Include an image of your Priority Matrix (X is time and Y is priority)
 | Render data on webpage | H | 3hrs|  |  |
 | Render conditional data on webpage | H | 2hrs|  |  |
 | Create routes | H | 4hrs|  |  |
-| Add basic CSS styling | H | 4hrs|  |  |
-| Implement responsive design | H | 5hrs|  |  |
-| Outsource images for horoscope cards | H | 5hrs|  |  |
+| Add basic CSS styling | M | 3hrs|  |  |
+| Implement responsive design | M | 4hrs|  |  |
+| Outsource images for horoscope cards | L | 3hrs|  |  |
 | Total | H | 30hrs|  | |
 
 ## Wireframes
 
-Display all wireframes here with any neccessary descriptions.
+### Homepage 
+<a href="https://imgur.com/n7prEW4"><img src="https://i.imgur.com/n7prEW4.png" title="source: imgur.com" /></a>
+
+### Horoscope Details Page
+<a href="https://imgur.com/mw12MOR"><img src="https://i.imgur.com/mw12MOR.png" title="source: imgur.com" /></a>
 
 ## API Snippet
 
@@ -66,7 +66,7 @@ Display all wireframes here with any neccessary descriptions.
 	- A conditionally rendered component
 	- Two functional routes
 - Fetch and use Astro API
-- Render data on page 
+- Render Astro API data on page 
 - Allow user to click on horoscope card and read their daily horoscope
 - Styled with responsive design 
 
@@ -77,20 +77,23 @@ Display all wireframes here with any neccessary descriptions.
 
 ## React Component Hierarchy
 
-Include an image of your component hierarchy that shows the data flow and architectural design of your app.
+<a href="https://imgur.com/rLhnDex"><img src="https://i.imgur.com/rLhnDex.jpg" title="source: imgur.com" /></a>
 
-## Components
+## Components 
 
-Based on the initial logic defined in the previous section, try to breakdown the logic further into stateless/stateful components. 
-
-| Component | Description |Type |
-| --- | --- | --- |
-| Header | The Header receives props that render multiple nav titles and links | Functional |
-| Main | This component houses multiple rendered views through React Router and controls data received from the initial API call in state | Class |
+| Component | Description | Stateful | Type |
+| --- | --- | --- | --- |
+| App.js | The App component hosts the axios API call and sets state. It houses the Header, Main, and Footer component, and additionally uses React Router to route to the Main and Profile components. | Y | Class |
+| Header.js | The Header component receives props from App to render the nav. It houses the Nav component. | N | Functional |
+| Main.js | The Main component receives props from App to render horoscope cards. It houses the Profile component. | N | Funcitonal |
+| Profile.js | The Profile component receives props from App to render horoscope details. | N | Functional |
+| Nav.js | The Nav component uses React Router to route the user to the Main component. | N | Funcitonal |
+| Footer.js | The Footer is strictly a UI component that provides information on the app. | Y | Functional |
 
 ## Additional Libraries
 
-Use this section to list all supporting libraries and thier role in the project. React Router Dom and Axios should be listed here at the very least.
+- React Router Dom
+- Axios 
 
 ## Issues and Resolutions
 
