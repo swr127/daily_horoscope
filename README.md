@@ -1,10 +1,10 @@
-# sr_project2 Overview
+# Daily Horoscope Overview
 
 ## Project Description
 
-Use this section to describe your project and what API or APIs it will utilize. List any relevant links, including the url to your live, deployed site.
+The **Daily Horoscope** is an application that leverages the Aztro API to provide users with their daily horoscope.
 
-Live App:
+Live App: TBC!
 
 ## Project Schedule
 
@@ -14,12 +14,12 @@ You are **responsible** for scheduling time with your squad to seek approval for
 
 |  Day | Deliverable | Status
 |---|---| ---|
-|Jan 24th| Project Pitch / Wireframes / Priority Matrix / Functional Components | Incomplete
-|Jan 27th| Core Application Structure (HTML, CSS, etc.) | Incomplete
-|Jan 28th| Pseudocode / actual code | Incomplete
-|Jan 29th| Initial Clickable Model  | Incomplete
-|Jan 30th| MVP | Incomplete
-|Jan 31tst| Present | Incomplete
+|Jan 24th| Whiteboard & code core application structure (REACT & CSS) | Incomplete
+|Jan 27th| Fetch data from API & pass to data to REACT components | Incomplete
+|Jan 28th| Render data from REACT components onto webpage | Incomplete
+|Jan 29th| Create routes and code CSS styling | Incomplete
+|Jan 30th| Finish MVP and work on Post-MVP | Incomplete
+|Jan 31st| Present | Incomplete
 
 ## Priority Matrix
 
@@ -27,14 +27,17 @@ Include an image of your Priority Matrix (X is time and Y is priority)
 
 ## Timeframes
 
-Timeframes are key in the development cycle. You have limited time to code and so much to accomplish!  Look at all of your planned files and components, and all of the areas of development you are planning and give an estimate of how long each one will take to complete. It's always best to pad the time to account for the unknown, so be sure to add an additional hour or two to play it safe. As you progress, you can update the "Time Invested" column to keep track of your hours, but that number should turn into "Actual Time" by the presentation day. Also, put a winter-themed gif at the top of your readme before you pitch to show you read the instructions thoroughly.
-
-
 | Component | Priority | Estimated Time | Time Invested | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
-| Adding Form | H | 3hrs| 3.5hrs | 3.5hrs |
-| Working with API | H | 3hrs| 2.5hrs | 2.5hrs |
-| Total | H | 6hrs| 5hrs | 5hrs |
+| Whiteboard & code app structure (REACT & CSS)  | H | 6hrs|  |  |
+| Fetch data from API | H | 5hrs|  |  |
+| Render data on webpage | H | 3hrs|  |  |
+| Render conditional data on webpage | H | 2hrs|  |  |
+| Create routes | H | 4hrs|  |  |
+| Add basic CSS styling | H | 4hrs|  |  |
+| Implement responsive design | H | 5hrs|  |  |
+| Outsource images for horoscope cards | H | 5hrs|  |  |
+| Total | H | 30hrs|  | |
 
 ## Wireframes
 
@@ -43,19 +46,34 @@ Display all wireframes here with any neccessary descriptions.
 ## API Snippet
 
 ```
-Paste a snippet received from a call to your API that shows the shape of the data
+{
+    "date_range": "Jan 20 - Feb 18",
+    "current_date": "January 24, 2020",
+    "description": "Just in time for the weekend, you've been inspired in the department of romance. You're in the mood to try anything at least once, and any lucky companion won't think twice about going along with whatever you suggest.",
+    "compatibility": "Virgo",
+    "mood": "Curious",
+    "color": "Purple",
+    "lucky_number": "13",
+    "lucky_time": "5am"
+}
+
 ```
 
 ## MVP
 
-- Find and use external api 
+- Create REACT app with at least:
+	- Six components
+	- A conditionally rendered component
+	- Two functional routes
+- Fetch and use Astro API
 - Render data on page 
-- Allow user to choose favorites 
-- Save their choices in firebase
+- Allow user to click on horoscope card and read their daily horoscope
+- Styled with responsive design 
 
 ## Post-MVP
 
-- Add user auth
+- Add social media share functionality to horoscope cards 
+- Add advanced CSS features to the horoscope cards based on user interaction (i.e. hover animations)
 
 ## React Component Hierarchy
 
