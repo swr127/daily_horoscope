@@ -46,14 +46,14 @@ Display all wireframes here with any neccessary descriptions.
 Paste a snippet received from a call to your API that shows the shape of the data
 ```
 
-### MVP
+## MVP
 
 - Find and use external api 
 - Render data on page 
 - Allow user to choose favorites 
 - Save their choices in firebase
 
-### Post-MVP
+## Post-MVP
 
 - Add user auth
 
