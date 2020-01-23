@@ -88,7 +88,7 @@ Live App: TBC!
 | Main.js | The Main component receives props from App to render horoscope cards. It houses the Profile component. | N | Funcitonal |
 | Profile.js | The Profile component receives props from App to render horoscope details. | N | Functional |
 | Nav.js | The Nav component uses React Router to route the user to the Main component. | N | Funcitonal |
-| Footer.js | The Footer is strictly a UI component that provides information on the app. | Y | Functional |
+| Footer.js | The Footer is strictly a UI component that provides information on the app. | N | Functional |
 
 ## Additional Libraries
 
