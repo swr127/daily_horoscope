@@ -27,13 +27,13 @@ Live App: TBC!
 | --- | :---: |  :---: | :---: | :---: |
 | Whiteboard & code app structure (REACT & CSS)  | H | 6hrs|  |  |
 | Fetch data from API | H | 5hrs|  |  |
-| Render data on webpage | H | 3hrs|  |  |
-| Render conditional data on webpage | H | 2hrs|  |  |
+| Render data on webpage | H | 4hrs|  |  |
+| Render conditional data on webpage | H | 3hrs|  |  |
 | Create routes | H | 4hrs|  |  |
-| Add basic CSS styling | M | 3hrs|  |  |
-| Implement responsive design | M | 4hrs|  |  |
+| Add basic CSS styling | M | 6hrs|  |  |
+| Implement responsive design | M | 5hrs|  |  |
 | Outsource images for horoscope cards | L | 3hrs|  |  |
-| Total | H | 30hrs|  | |
+| Total | H | 36hrs|  | |
 
 ## Wireframes
 
