@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React from 'react'
 import { Route } from 'react-router-dom'
 import Axios from 'axios'
 import Header from './components/Header'
@@ -8,28 +8,33 @@ import Footer from './components/Footer'
 import './App.css'
 
 // **************
-// SET UP AZTRO API
+// SET UP ASYNC API CALL
+// SET STATE
 // **************
 
 class App extends React.Component {
   constructor(props){
     super(props)
     this.state = {
-      sign: {}
+      data: []
     }
   }
 
-  componentDidMount () {
-    const url = 'https://aztro.sameerkumar.website/?sign=aquarius&day=today'
-    fetch(url, {
-      method: 'POST'}).then(response => response.json()).then(sign => {
-      this.setState({sign})
+  async componentDidMount() {
+    const aquarius = await Axios('http://ohmanda.com/api/horoscope/aquarius/')
+    this.setState({
+      data: aquarius.data
     })
   }
 
+// **************
+// RENDER COMPONENTS
+// PASS STATE AS PROPS
+// CREATE ROUTES
+// **************
+
   render() {
-    let response = this.state.sign
-    console.log(response)
+    console.log(this.state.data)
   
     return (
       <div className="App">
@@ -37,11 +42,11 @@ class App extends React.Component {
 
         <main className="Main">
           <Route exact path='/' component={(props) =>
-            {return <Main {...props} horoscope={this.state.sign} /> }}
+            {return <Main {...props} horoscope={this.state.data} /> }}
           />
 
           <Route exact path='/:sign' component={(props) =>
-            {return <Profile {...props} horoscope={this.state.sign} /> }}
+            {return <Profile {...props} horoscope={this.state.data} /> }}
           />
         </main>
 
@@ -52,37 +57,3 @@ class App extends React.Component {
 }
 
 export default App
-
-// **************
-// OLD CODE
-// **************
-
-// HOOKS 
-// const url = 'https://aztro.sameerkumar.website/?sign=aquarius&day=today'
-
-// function App() {
-//   const [sign, setSign] = useState([])
-
-//   const getSign = async () => {
-//     let response = await Axios.get(url)
-//     setSign(response.data)
-//     console.log(response.data)
-//   }
-
-//   useEffect(() => {
-//     getSign()
-//   }, []) 
-
-// ASYNC 
-// async getSign() {
-  //   try {
-  //     const url = 'https://aztro.sameerkumar.website/?sign=aquarius&day=today'
-  //     const res = await Axios.get(url, {
-  //       method: 'POST'}).then(response => response.json()).then(sign => {
-  //       this.setState({sign: res.data})
-  //     })
-  //     console.log(this.state)
-  //   } catch (err) {
-  //     console.log({err})
-  //   }
-  // }

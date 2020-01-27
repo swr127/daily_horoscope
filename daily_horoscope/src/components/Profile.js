@@ -6,7 +6,7 @@ import React from 'react'
 
 function Profile() {
   return (
-    <div className="App">
+    <div className="Profile">
      <h1>Profile</h1>
     </div>
   )
