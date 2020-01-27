@@ -13,17 +13,38 @@ import './App.css'
 // **************
 
 class App extends React.Component {
-  constructor(props){
+  constructor(props) {
     super(props)
     this.state = {
-      data: []
+      aquarius: [],
+      pisces: [],
+      aries: [],
+      taurus: [],
+      gemini: [],
+      cancer: [],
+      leo: [],
+      virgo: [],
+      libra: [],
+      scorpio: [],
+      sagittarius: [],
+      capricorn: []
     }
   }
 
   async componentDidMount() {
     const aquarius = await Axios('http://ohmanda.com/api/horoscope/aquarius/')
     this.setState({
-      data: aquarius.data
+      aquarius: aquarius.data
+    })
+
+    const pisces = await Axios('http://ohmanda.com/api/horoscope/pisces/')
+    this.setState({
+      pisces: pisces.data
+    })
+
+    const aries = await Axios('http://ohmanda.com/api/horoscope/aries/')
+    this.setState({
+      aries: aries.data
     })
   }
 
@@ -34,7 +55,9 @@ class App extends React.Component {
 // **************
 
   render() {
-    console.log(this.state.data)
+    console.log(this.state.aquarius)
+    console.log(this.state.pisces)
+    console.log(this.state.aries)
   
     return (
       <div className="App">
@@ -42,11 +65,14 @@ class App extends React.Component {
 
         <main className="Main">
           <Route exact path='/' component={(props) =>
-            {return <Main {...props} horoscope={this.state.data} /> }}
+            {return <Main {...props} 
+              aquarius={this.state.aquarius}
+              pisces={this.state.pisces}
+              aries={this.state.aries} /> }}
           />
 
           <Route exact path='/:sign' component={(props) =>
-            {return <Profile {...props} horoscope={this.state.data} /> }}
+            {return <Profile {...props} data={this.state.data} /> }}
           />
         </main>
 

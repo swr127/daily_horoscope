@@ -5,12 +5,12 @@ import React from 'react'
 // **************
 
 function Main(props) {
-  return (
-    <div className="Main">
-    {/* <h1>Aquarius</h1>
-     <h2>{props.horoscope.date_range}</h2> */}
-    </div>
-  )
+    // const { data } = props
+    return (
+        <div className="Main">
+            {/* <h1>{data.sign}</h1> */}
+        </div>
+    )
 }
 
 export default Main
