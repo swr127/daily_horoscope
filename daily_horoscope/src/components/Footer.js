@@ -1,8 +1,9 @@
-import React from 'react'
+// **************
+// FOOTER COMPONENT 
+// Functional component 
+// **************
 
-// **************
-// RENDER FOOTER
-// **************
+import React from 'react'
 
 function Footer() {
   return (

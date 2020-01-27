@@ -1,9 +1,10 @@
+// **************
+// HEADER COMPONENT 
+// Functional component 
+// **************
+
 import React from 'react'
 import { NavLink } from 'react-router-dom'
-
-// **************
-// RENDER HEADER
-// **************
 
 function Header() {
   return (

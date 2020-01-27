@@ -1,8 +1,9 @@
-import React from 'react'
+// **************
+// MAIN COMPONENT 
+// Functional component 
+// **************
 
-// **************
-// RENDER MAIN
-// **************
+import React from 'react'
 
 function Main(props) {
     // const { data } = props

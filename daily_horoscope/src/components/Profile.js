@@ -1,8 +1,9 @@
-import React from 'react'
+// **************
+// PROFILE COMPONENT 
+// Functional component 
+// **************
 
-// **************
-// RENDER PROFILE
-// **************
+import React from 'react'
 
 function Profile(props) {
     // const { data } = props
