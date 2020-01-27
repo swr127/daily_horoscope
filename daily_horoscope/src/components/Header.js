@@ -1,5 +1,9 @@
 import React from 'react'
 
+// **************
+// RENDER HEADER
+// **************
+
 function Header() {
   return (
     <div className="App">

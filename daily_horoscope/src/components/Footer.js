@@ -1,5 +1,9 @@
 import React from 'react'
 
+// **************
+// RENDER FOOTER
+// **************
+
 function Footer() {
   return (
     <div className="App">

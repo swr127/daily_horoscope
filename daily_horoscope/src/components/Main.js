@@ -1,5 +1,9 @@
 import React from 'react'
 
+// **************
+// RENDER MAIN
+// **************
+
 function Main() {
   return (
     <div className="App">

@@ -1,5 +1,9 @@
 import React from 'react'
 
+// **************
+// RENDER PROFILE
+// **************
+
 function Profile() {
   return (
     <div className="App">
