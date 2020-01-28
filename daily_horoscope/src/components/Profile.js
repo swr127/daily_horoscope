@@ -16,17 +16,19 @@ class Profile extends React.Component {
 
     async comoponentDidMount() {
         const sign = this.props.match.params.sign
-        const api = await Axios.get(`https://cors-anywhere.herokuapp.com/http://ohmanda.com/api/horoscope/${sign}`)
+        const api = await Axios(`https://cors-anywhere.herokuapp.com/http://ohmanda.com/api/horoscope/${sign}`)
         this.setState({
-            sign: api.data.horoscope
+            sign: api.data
         })
-        console.log(this.state.sign)
     }
 
     render() {
+        console.log(this.props)
+        console.log(this.state)
+    
         return(
             <div className="Profile">
-                {this.state.sign}
+                <p>Placeholder</p>
             </div>
         )
     }
