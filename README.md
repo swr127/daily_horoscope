@@ -2,7 +2,7 @@
 
 ## Project Description
 
-The **Daily Horoscope** is an application that leverages the Aztro API to provide users with their daily horoscope.
+The **Daily Horoscope** is an application that leverages the Astrology API to provide users with their daily horoscope.
 
 Live App: TBC!
 
@@ -10,8 +10,8 @@ Live App: TBC!
 
 |  Day | Deliverable | Status
 |---|---| ---|
-|Jan 24th| Whiteboard & code core application structure (REACT & CSS) | Incomplete
-|Jan 27th| Fetch data from API & pass data to REACT components | Incomplete
+|Jan 24th| Whiteboard & code core application structure (REACT & CSS) | Complete
+|Jan 27th| Fetch data from API & pass data to REACT components | Complete
 |Jan 28th| Render data from REACT components onto webpage | Incomplete
 |Jan 29th| Create routes and code CSS styling | Incomplete
 |Jan 30th| Finish MVP and work on Post-MVP | Incomplete
@@ -25,14 +25,14 @@ Live App: TBC!
 
 | Component | Priority | Estimated Time | Time Invested | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
-| Whiteboard & code app structure (REACT & CSS)  | H | 6hrs|  |  |
-| Fetch data from API | H | 5hrs|  |  |
+| Whiteboard & code app structure (REACT & CSS)  | H | 6hrs| 8hrs | 8hrs |
+| Fetch data from API | H | 5hrs| 4hrs | 4hrs |
 | Render data on webpage | H | 4hrs|  |  |
 | Render conditional data on webpage | H | 3hrs|  |  |
 | Create routes | H | 4hrs|  |  |
 | Add basic CSS styling | M | 6hrs|  |  |
 | Implement responsive design | M | 5hrs|  |  |
-| Outsource images for horoscope cards | L | 3hrs|  |  |
+| Outsource images for horoscope cards | L | 3hrs| 2hrs | 2hrs |
 | Total | H | 36hrs|  | |
 
 ## Wireframes
@@ -47,14 +47,9 @@ Live App: TBC!
 
 ```
 {
-    "date_range": "Jan 20 - Feb 18",
-    "current_date": "January 24, 2020",
-    "description": "Just in time for the weekend, you've been inspired in the department of romance. You're in the mood to try anything at least once, and any lucky companion won't think twice about going along with whatever you suggest.",
-    "compatibility": "Virgo",
-    "mood": "Curious",
-    "color": "Purple",
-    "lucky_number": "13",
-    "lucky_time": "5am"
+    "sign": "aquarius",
+    "date": "2020-01-28",
+    "horoscope": " Are you trying to make a decision? If it's taking too long for your liking, or if other people are pushing you to hurry up already, then you have to do what it takes to figure things out today. First, stop trying to see things so completely. Narrow your focus! You can't explore all ways of doing something. You have to pick just a few possibilities and flesh them out in your mind. Give up on the idea that the perfect answer is out there, because it's not. Close enough is good enough."
 }
 
 ```
@@ -65,8 +60,8 @@ Live App: TBC!
 	- Six components
 	- A conditionally rendered component
 	- Two functional routes
-- Fetch and use Astro API
-- Render Astro API data on page 
+- Fetch and use Astrology API
+- Render Astrology API data on page 
 - Allow user to click on horoscope card and read their daily horoscope
 - Styled with responsive design 
 
@@ -110,4 +105,4 @@ function reverse(string) {
 ```
 
 ## Change Log
- Use this section to document what changes were made in your overall planning and the reasoning behind those changes.  
+- I changed my third party API from Aztro to Astrology due to limitations with the Aztro API
