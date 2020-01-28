@@ -5,7 +5,6 @@
 
 import React from 'react'
 import { Route, Switch } from 'react-router-dom'
-import Axios from 'axios'
 import Header from './components/Header'
 import Main from './components/Main'
 import Profile from './components/Profile'
@@ -21,7 +20,7 @@ function App() {
       <main className="Main">
         <Switch>
           <Route exact path="/" render = {() => <Main listOfSigns={signs} /> } />
-          <Route exact path="/sign" component={Profile} />
+          <Route exact path="/:sign" component={Profile} />
         </Switch>
       </main>
 
