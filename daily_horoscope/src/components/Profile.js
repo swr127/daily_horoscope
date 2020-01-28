@@ -14,9 +14,10 @@ class Profile extends React.Component {
             sign:'',
             date: '',
             horoscope:'',
-            image: ''
+            signImage: ''
         }
     }
+
 
     async componentDidMount() {
         const sign = this.props.match.params.sign
@@ -24,35 +25,26 @@ class Profile extends React.Component {
         this.setState({
             sign: api.data.sign,
             date: api.data.date,
-            horoscope: api.data.horoscope
+            horoscope: api.data.horoscope,
+            signImage: signs[sign].profile
         })
+        
     }
-
+    
     render() {
-        // console.log(this.props)
-        // console.log(this.state)
         const sign = this.state.sign
         const date = this.state.date
         const horoscope = this.state.horoscope
     
-        // const keys = Object.keys(signs)
-        // console.log(keys)
+        const keys = Object.keys(signs)
+        console.log(keys)
 
         return(
             <div className="Profile">
-                {/* {keys.map((key, index) => {
-                    return (
-                        <div key={index}>
-                        <img src={signs[key].profile} alt={'zodiac sign'}/>
-                        </div>
-                    )
-                })} */}
-   
-                <main> 
-                    <h2>{sign}</h2>
-                    <h3>{date}</h3>
-                    <p>{horoscope}</p>
-                </main>
+                <h2>{sign}</h2>
+                <h3>{date}</h3>
+                { this.state.signImage ? <img src={this.state.signImage} /> : <p>Loading</p>}
+                <p>{horoscope}</p>
             </div>
         )
     }
