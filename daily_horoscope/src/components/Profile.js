@@ -11,6 +11,7 @@ class Profile extends React.Component {
         super(props)
         this.state = {
             sign:'',
+            date: '',
             horoscope:''
         }
     }
@@ -20,6 +21,7 @@ class Profile extends React.Component {
         const api = await Axios(`https://cors-anywhere.herokuapp.com/http://ohmanda.com/api/horoscope/${sign}`)
         this.setState({
             sign: api.data.sign,
+            date: api.data.date,
             horoscope: api.data.horoscope
         })
     }
@@ -28,11 +30,13 @@ class Profile extends React.Component {
         // console.log(this.props)
         // console.log(this.state)
         const sign = this.state.sign
+        const date = this.state.date
         const horoscope = this.state.horoscope
 
         return(
             <div className="Profile">
                 <h2>{sign}</h2>
+                <h3>{date}</h3>
                 <p>{horoscope}</p>
             </div>
         )
