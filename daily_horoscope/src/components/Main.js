@@ -7,9 +7,8 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 
 function Main(props) {
-    const { listOfSigns } = props
-    // console.log(listOfSigns)
-    const keys = Object.keys(listOfSigns)
+    const { signs } = props
+    const keys = Object.keys(signs)
 
     return (
         <div className="Main">
@@ -17,7 +16,7 @@ function Main(props) {
                 return (
                     <Link to={`/${key}`} key={index}>
                         <div>
-                            <img src={listOfSigns[key]} alt={'zodiac sign'}/>
+                            <img src={signs[key].main} alt={'zodiac sign'}/>
                             <h2>{key}</h2>
                         </div> 
                     </Link>

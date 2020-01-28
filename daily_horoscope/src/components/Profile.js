@@ -5,6 +5,7 @@
 
 import React from 'react'
 import Axios from 'axios'
+import signs from '../data/signs'
 
 class Profile extends React.Component {
     constructor(props) {
@@ -12,7 +13,8 @@ class Profile extends React.Component {
         this.state = {
             sign:'',
             date: '',
-            horoscope:''
+            horoscope:'',
+            image: ''
         }
     }
 
@@ -32,12 +34,25 @@ class Profile extends React.Component {
         const sign = this.state.sign
         const date = this.state.date
         const horoscope = this.state.horoscope
+    
+        // const keys = Object.keys(signs)
+        // console.log(keys)
 
         return(
             <div className="Profile">
-                <h2>{sign}</h2>
-                <h3>{date}</h3>
-                <p>{horoscope}</p>
+                {/* {keys.map((key, index) => {
+                    return (
+                        <div key={index}>
+                        <img src={signs[key].profile} alt={'zodiac sign'}/>
+                        </div>
+                    )
+                })} */}
+   
+                <main> 
+                    <h2>{sign}</h2>
+                    <h3>{date}</h3>
+                    <p>{horoscope}</p>
+                </main>
             </div>
         )
     }
