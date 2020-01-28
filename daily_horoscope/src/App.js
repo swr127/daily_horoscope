@@ -19,9 +19,10 @@ function App() {
 
       <main className="Main">
         <Switch>
+          
           <Route exact path="/" render = {() => <Main signs={signs} /> } />
           <Route exact path="/:sign" component={Profile} />
-          {/* <Route exact path="/:sign" render = {() => <Profile listOfSigns={signs} /> } /> */}
+
         </Switch>
       </main>
 

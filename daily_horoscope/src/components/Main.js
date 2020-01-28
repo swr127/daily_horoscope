@@ -16,7 +16,7 @@ function Main(props) {
                 return (
                     <Link to={`/${key}`} key={index}>
                         <div>
-                            <img src={signs[key].main} alt={'zodiac sign'}/>
+                            <img src={signs[key].main} alt={key}/>
                             <h2>{key}</h2>
                         </div> 
                     </Link>
@@ -27,3 +27,4 @@ function Main(props) {
 }
 
 export default Main
+
