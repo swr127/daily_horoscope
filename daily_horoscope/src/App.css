@@ -33,11 +33,6 @@
   width: 28px;
 }
 
-.searchbutton:hover {
-  background-color:#ec462f;
-  color: white;
-}
-
 .Header h1 {
   font-size: 45px;
   font-weight: 400;
@@ -58,8 +53,33 @@
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
-
 }
+
+.Card {
+  margin: 10px;
+  text-align: left;
+}
+
+.Card img {
+  border-radius: 10px;
+}
+
+.Card h3 {
+  color: black;
+  margin: 0;
+  text-decoration: none;
+}
+
+.Card h4 {
+  color: gray;
+  margin: 0;
+  padding: 5px 0px 0px 0px;
+}
+
+/* .searchbutton:hover {
+  background-color:#ec462f;
+  color: white;
+} */
 
 .Profile {
 

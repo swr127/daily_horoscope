@@ -14,15 +14,15 @@ function Main(props) {
         <div className="Main">
             {keys.map((key, index) => {
                 return (
-                    <div>
-                        <Link to={`/${key}`} key={index}>
+                    <div className="Card" >
+                        <Link to={`/${key}`} key={index} style={{ textDecoration: 'none' }}>
                             <img src={signs[key].main} alt={key}/>
                             <h3>{signs[key].name}</h3>
                         </Link>
 
                         <h4>{signs[key].date}</h4>
 
-                        <Link to={`/${key}`} key={index}>
+                        <Link to={`/${key}`} key={index} style={{ textDecoration: 'none' }}>
                             <p>Read your horoscope ></p>
                         </Link>
                     </div>
