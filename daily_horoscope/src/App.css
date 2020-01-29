@@ -1,3 +1,102 @@
+/* **************
+// ALL DEVICE STYLING
+/* **************/
+
 .App {
+  background-color: white;
+  font-family: 'Montserrat', sans-serif;
   text-align: center;
+  position: relative;
+  margin: 0 auto;
+}
+
+/* **************
+// DESKTOP
+/* **************/
+
+.Header {
+  width: 100%;
+}
+
+.Header nav {
+  display: block;
+  background-color: #f3f6f6;
+  height: 30px;
+  width: 100%;
+}
+
+.Navlink {
+  color: black;
+  float: left;
+  height: 28px;
+  padding: 5px 0px 5px 10px;
+  width: 28px;
+}
+
+.searchbutton:hover {
+  background-color:#ec462f;
+  color: white;
+}
+
+.Header h1 {
+  font-size: 45px;
+  font-weight: 400;
+  letter-spacing: 4px;
+}
+
+.Header p {
+  font-size: 18px;
+  margin: 0 auto;
+  padding: 0px 0px 25px 0px;
+  text-align: center;
+  width: 800px;
+}
+/* Edit Header p width sizing for Mobile */
+
+.Main {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+
+}
+
+.Profile {
+
+}
+
+.Footer {
+  background-color: black;
+  color: white;
+  font-size: 12px;
+  padding: 2px;
+  width: 100%;
+}
+
+.Footer a {
+  color: white;
+}
+
+/* **************
+// TABLET
+/* **************/
+
+@media screen and (max-width: 1025px) {
+
+}
+
+/* **************
+// STANDARD MOBILE
+/* **************/
+
+@media screen and (max-width: 600px) {
+
+}
+
+/* **************
+// SMALL MOBILE
+/* **************/
+
+@media screen and (max-width: 500px) {
+
 }

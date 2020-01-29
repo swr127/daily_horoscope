@@ -9,10 +9,17 @@ import { NavLink } from 'react-router-dom'
 function Header() {
   return (
     <div className="Header">
-        <NavLink exact activeClassName="active" to="/">
-            Home
+        <nav>
+        <NavLink className="Navlink" exact activeClassName="active" to="/">
+            HOME
         </NavLink>
-     <h1>Daily Horoscope</h1>
+        </nav>
+
+        <h1>DAILY HOROSCOPE</h1>
+        <p>Discover the twelve zodiac signs of Astrology and read your daily horoscope.
+        Your horoscope is updated daily and is based on the movement of the Sun
+        and Moon in relation to the universe. 
+        </p>
     </div>
   )
 }

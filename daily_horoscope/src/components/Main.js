@@ -21,6 +21,7 @@ function Main(props) {
                         </Link>
 
                         <h4>{signs[key].date}</h4>
+
                         <Link to={`/${key}`} key={index}>
                             <p>Read your horoscope ></p>
                         </Link>
