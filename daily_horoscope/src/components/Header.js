@@ -7,18 +7,18 @@ import React from 'react'
 import { NavLink } from 'react-router-dom'
 
 function Header(props) {
-    // const { signs } = props
-    // const keys = Object.keys(signs)
-
-    // handleClick = (event) => {
-    //     event.preventDefault()
-    //     {keys.map((key, index) => {
-    //         return (
-    //             <div className="Search" >
-    //                 <Link to={`/${key}`} key={index}></Link>
-    //             </div>
-    //         )
-    // }
+    const { signs } = props
+    const keys = Object.keys(signs)
+    const handleClick = (event) => {
+    event.preventDefault()
+    // use the current form value
+    // to search zodiac signs
+    const searchTerm = 'aqua'
+    const findZodiac = keys.find(sign => sign.includes(searchTerm))
+    console.log(findZodiac)
+    
+}
+    
 
   return (
     <div className="Header">
@@ -29,8 +29,7 @@ function Header(props) {
 
             <form>
                 <input type="text" placeholder="ENTER ZODIAC SIGN" />
-                <button>SEARCH</button>
-                {/* <button onClick={handleClick}>SEARCH</button> */}
+                <button onClick={(e) => handleClick(e)}>SEARCH</button>
             </form>
         </nav>
 
