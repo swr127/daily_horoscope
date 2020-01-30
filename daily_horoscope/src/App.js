@@ -13,11 +13,6 @@ import signs from './data/signs'
 import './App.css'
 
 function App() {
-
-  // routeToProfile() {
-
-  // }
-
   return (
     <div className="App">
       <Header signs={signs}/>
