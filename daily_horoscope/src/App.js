@@ -15,11 +15,11 @@ import './App.css'
 function App() {
   return (
     <div className="App">
-      <Header />
+      <Header signs={signs}/>
 
       <main className="Main">
         <Switch>
-          
+
           <Route exact path="/" render = {() => <Main signs={signs} /> } />
           <Route exact path="/:sign" component={Profile} />
 

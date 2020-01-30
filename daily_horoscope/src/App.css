@@ -31,10 +31,29 @@
   height: 28px;
   padding: 5px 0px 5px 10px;
   width: 28px;
+  text-decoration: none;
 }
 
 .Navlink:hover {
   color: #d2453c;
+  font-weight: 600;
+}
+
+form {
+  float: right;
+  padding: 5px 20px 5px 0px;
+}
+
+button {
+  border: 1;
+  border-color: black;
+  background-color: white;
+  color: black;
+  font-size: 12px;
+}
+
+button:hover {
+  color:#d2453c;
   font-weight: 600;
 }
 
