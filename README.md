@@ -4,7 +4,7 @@
 
 The **Daily Horoscope** is an application that leverages the Astrology API to provide users with their daily horoscope.
 
-Live App: TBC!
+Live App: http://daily-horoscope.surge.sh/
 
 ## Project Schedule
 
@@ -12,9 +12,9 @@ Live App: TBC!
 |---|---| ---|
 |Jan 24th| Whiteboard & code core application structure (REACT & CSS) | Complete
 |Jan 27th| Fetch data from API & pass data to REACT components | Complete
-|Jan 28th| Render data from REACT components onto webpage | Incomplete
-|Jan 29th| Create routes and code CSS styling | Incomplete
-|Jan 30th| Finish MVP and work on Post-MVP | Incomplete
+|Jan 28th| Render data from REACT components onto webpage | Complete
+|Jan 29th| Create routes and code CSS styling | Complete
+|Jan 30th| Finish MVP and work on Post-MVP | Complete
 |Jan 31st| Present | Incomplete
 
 ## Priority Matrix
@@ -27,13 +27,13 @@ Live App: TBC!
 | --- | :---: |  :---: | :---: | :---: |
 | Whiteboard & code app structure (REACT & CSS)  | H | 6hrs| 8hrs | 8hrs |
 | Fetch data from API | H | 5hrs| 4hrs | 4hrs |
-| Render data on webpage | H | 4hrs|  |  |
-| Render conditional data on webpage | H | 3hrs|  |  |
-| Create routes | H | 4hrs|  |  |
-| Add basic CSS styling | M | 6hrs|  |  |
-| Implement responsive design | M | 5hrs|  |  |
+| Render data on webpage | H | 4hrs| 5hrs | 5hrs |
+| Render conditional data on webpage | H | 3hrs| 4hrs  | 4hrs  |
+| Create routes | H | 4hrs| 2hrs | 2hrs |
+| Add basic CSS styling | M | 6hrs| 6hrs | 6hrs |
+| Implement responsive design | M | 5hrs| 5hrs | 5hrs |
 | Outsource images for horoscope cards | L | 3hrs| 2hrs | 2hrs |
-| Total | H | 36hrs|  | |
+| Total | H | 36hrs| 36hrs | 36hrs |
 
 ## Wireframes
 
@@ -92,17 +92,19 @@ Live App: TBC!
 
 ## Issues and Resolutions
 
-Use this section to list of all major issues you anticipate encountering during development and how you plan to tackle them. Be sure to update this section during development, documenting the actual resolutions you inacted, as well as any other unexpected obstacles you encountered along the way.
+I experienced a lot of issues with my original API, and even when I switched to the second API I felt very limited. All of the good astrology APIs required payment, which forced me to work with a free API that had only three data points. This limited the functionality of my app, so I decided to dedicate a lot of my time to styling.
 
 ## Code Snippet
 
-Use this section to include a brief code snippet you are proud of, along with a brief description of why.
+This is a fun code snippet that renders a loading GIF until the API call is made and renders data on the page. 
 
 ```
-function reverse(string) {
-	// here is the code to reverse a string of text
+{ image ? <img className="Image" src={image} alt={sign}/> : 
+<img className="Loading" src="https://i.imgur.com/H2NLeMT.gif" alt="Loading"/> }
 }
 ```
 
 ## Change Log
-- I changed my third party API from Aztro to Astrology due to limitations with the Aztro API
+- I changed my third party API from Aztro to Astrology due to limitations with the Aztro API.
+- I decided to make my axios call and house state in the Profile component rather than the App component.
+- Since I changed where I made my axios call, the Profile component became a class component and the App component became a functional component.
