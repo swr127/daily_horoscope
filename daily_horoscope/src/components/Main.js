@@ -12,21 +12,28 @@ function Main(props) {
 
     return (
         <div className="Main">
-            {keys.map((key, index) => {
-                return (
-                    <div className="Card" >
-                        <Link to={`/${key}`} key={index} style={{ textDecoration: 'none' }}>
-                            <img src={signs[key].main} alt={key}/>
-                            <h3>{signs[key].name}</h3>
-                        </Link>
+            <p className="Description">Discover the twelve zodiac signs of Astrology 
+            and read your daily horoscope. Your horoscope is updated daily and is determined
+            by the movement of the Sun and Moon in relation to the universe.  
+            </p>
+            <div className="Cards">
+                {keys.map((key, index) => {
+                    return (
+                        <div className="Card" >
+                            <Link to={`/${key}`} key={index} style={{ textDecoration: 'none' }}>
+                                <img src={signs[key].main} alt={key}/>
+                                <h3>{signs[key].name}</h3>
+                            </Link>
 
-                        <h4>{signs[key].date}</h4>
+                            <h4>{signs[key].date}</h4>
 
-                        <Link to={`/${key}`} key={index} style={{ textDecoration: 'none' }}>
-                            <p>Read your horoscope ></p>
-                        </Link>
-                    </div>
-                )})}
+                            <Link to={`/${key}`} key={index} style={{ textDecoration: 'none' }}>
+                                <p>Read your horoscope ></p>
+                            </Link>
+                        </div>
+                    )
+                })}
+            </div>
         </div>
     )
 }

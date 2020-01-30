@@ -16,10 +16,6 @@ function Header() {
         </nav>
 
         <h1>DAILY HOROSCOPE</h1>
-        <p>Discover the twelve zodiac signs of Astrology and read your daily horoscope.
-        Your horoscope is updated daily and is based on the movement of the Sun
-        and Moon in relation to the universe. 
-        </p>
     </div>
   )
 }

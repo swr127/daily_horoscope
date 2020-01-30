@@ -33,22 +33,27 @@
   width: 28px;
 }
 
+.Navlink:hover {
+  color: #d2453c;
+  font-weight: 600;
+}
+
 .Header h1 {
   font-size: 45px;
   font-weight: 400;
   letter-spacing: 4px;
 }
 
-.Header p {
+.Description {
   font-size: 18px;
   margin: 0 auto;
   padding: 0px 0px 25px 0px;
   text-align: center;
-  width: 800px;
+  width: 700px;
 }
-/* Edit Header p width sizing for Mobile */
+/* Edit description width sizing for Mobile */
 
-.Main {
+.Cards {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -65,24 +70,58 @@
 }
 
 .Card h3 {
-  color: black;
+  color: #d2453c;
+  font-size: 20px;
   margin: 0;
   text-decoration: none;
 }
 
+.Card h3:hover {
+  color: #ddaab9;
+}
+
 .Card h4 {
   color: gray;
+  font-size: 18px;
   margin: 0;
   padding: 5px 0px 0px 0px;
 }
 
-/* .searchbutton:hover {
-  background-color:#ec462f;
-  color: white;
-} */
+.Card p {
+  color: #d2453c;
+  font-size: 16px;
+}
+
+.Card p:hover {
+  color: #ddaab9;
+}
 
 .Profile {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
 
+.Horoscope {
+  text-align: center;
+}
+
+.Horoscope img {
+  border-radius: 10px;
+  padding: 20px 0px 0px 0px;
+}
+
+.Horoscope h3 {
+  color: #d2453c;
+  font-size: 24px;
+  margin: 0;
+  padding: 20px 0px 0px 0px;
+}
+
+.Horoscope p {
+  font-size: 20px;
+  width: 1000px;
+  padding: 0px 0px 30px 0px;
 }
 
 .Footer {

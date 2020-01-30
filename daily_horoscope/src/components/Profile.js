@@ -38,9 +38,11 @@ class Profile extends React.Component {
 
         return(
             <div className="Profile">
-                { image ? <img src={image} alt={sign}/> : <p>Loading</p>}
-                <h3>{date}</h3>
-                <p>{horoscope}</p>
+                <div className="Horoscope">
+                    { image ? <img src={image} alt={sign}/> : <p>Loading</p>}
+                    <h3>{date}</h3>
+                    <p>{horoscope}</p>
+                </div>
             </div>
         )
     }
