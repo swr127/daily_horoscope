@@ -126,7 +126,7 @@ button:hover {
   text-align: center;
 }
 
-.Horoscope img {
+.Image {
   border-radius: 10px;
 }
 
@@ -141,6 +141,11 @@ button:hover {
   font-size: 20px;
   width: 1000px;
   padding: 0px 0px 30px 0px;
+}
+
+.Loading {
+  height: 200px;
+  width: 200px;
 }
 
 .Footer {
@@ -160,9 +165,23 @@ button:hover {
 /* **************/
 
 @media screen and (max-width: 1050px) {
+  .Navlink {
+    color: #d2453c;
+    font-weight: 600;
+  }
+
   .Card img {
     height: 200px;
     width: 400px;
+  }
+  
+  .Horoscope h3 {
+    font-size: 24px;
+  }
+  
+  .Horoscope p {
+    font-size: 20px;
+    width: 850px;
   }
 
 }
@@ -172,6 +191,11 @@ button:hover {
 /* **************/
 
 @media screen and (max-width: 840px) {
+  .Navlink {
+    color: #d2453c;
+    font-weight: 600;
+  }
+
   .Header h1 {
     font-size: 40px;
   }
@@ -198,6 +222,20 @@ button:hover {
     font-size: 14px;
   }
 
+  .Image {
+    height: 200px;
+    width: 650px;
+  }
+  
+  .Horoscope h3 {
+    font-size: 20px;
+  }
+  
+  .Horoscope p {
+    font-size: 18px;
+    width: 650px;
+  }
+
 }
 
 /* **************
@@ -205,6 +243,11 @@ button:hover {
 /* **************/
 
 @media screen and (max-width: 640px) {
+  .Navlink {
+    color: #d2453c;
+    font-weight: 600;
+  }
+
   .Header h1 {
     font-size: 36px;
   }
@@ -215,8 +258,27 @@ button:hover {
   }
  
   .Card img {
-    height: 250px;
+    height: 200px;
     width: 500px;
+  }
+
+  .Image {
+    height: 150px;
+    width: 500px;
+  }
+  
+  .Horoscope h3 {
+    font-size: 18px;
+  }
+  
+  .Horoscope p {
+    font-size: 15px;
+    width: 500px;
+  }
+
+  .Loading {
+    height: 100px;
+    width: 100px;
   }
 
 }
@@ -226,6 +288,11 @@ button:hover {
 /* **************/
 
 @media screen and (max-width: 500px) {
+  .Navlink {
+    color: #d2453c;
+    font-weight: 600;
+  }
+
   .Header h1 {
     font-size: 36px;
   }
@@ -237,6 +304,25 @@ button:hover {
   .Card img {
     height: 200px;
     width: 400px;
+  }
+
+  .Image {
+    height: 125px;
+    width: 400px;
+  }
+  
+  .Horoscope h3 {
+    font-size: 18px;
+  }
+  
+  .Horoscope p {
+    font-size: 15px;
+    width: 400px;
+  }
+
+  .Loading {
+    height: 100px;
+    width: 100px;
   }
 
 }

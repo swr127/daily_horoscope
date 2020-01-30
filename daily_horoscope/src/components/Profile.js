@@ -39,8 +39,8 @@ class Profile extends React.Component {
         return(
             <div className="Profile">
                 <div className="Horoscope">
-                    { image ? <img src={image} alt={sign}/> : 
-                    <img src="https://i.imgur.com/H2NLeMT.gif" alt="Loading"/> }
+                    { image ? <img className="Image" src={image} alt={sign}/> : 
+                    <img className="Loading" src="https://i.imgur.com/H2NLeMT.gif" alt="Loading"/> }
                     <h3>{date}</h3>
                     <p>{horoscope}</p>
                 </div>
