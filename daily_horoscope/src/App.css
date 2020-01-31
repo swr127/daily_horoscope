@@ -8,6 +8,8 @@
   text-align: center;
   position: relative;
   margin: 0 auto;
+  overflow: hidden;
+  transition: all ease-in;
   scroll-behavior: smooth;
   -webkit-font-smoothing: antialiased;
 }
@@ -29,6 +31,7 @@
 
 .Navlink {
   color: black;
+  font-size: 18px;
   float: left;
   height: 28px;
   padding: 5px 0px 5px 10px;
@@ -41,26 +44,8 @@
   font-weight: 600;
 }
 
-form {
-  float: right;
-  padding: 5px 20px 5px 0px;
-}
-
-button {
-  border: 1;
-  border-color: black;
-  background-color: white;
-  color: black;
-  font-size: 12px;
-}
-
-button:hover {
-  color:#d2453c;
-  font-weight: 600;
-}
-
 .Header h1 {
-  font-size: 45px;
+  font-size: 48px;
   font-weight: 400;
   letter-spacing: 4px;
 }
@@ -128,10 +113,11 @@ button:hover {
 
 .Image {
   border-radius: 10px;
+  margin-top: 20px;
 }
 
 .Horoscope h3 {
-  color: #d2453c;
+  color: #ddaab9;
   font-size: 24px;
   margin: 0;
   padding: 20px 0px 0px 0px;
@@ -146,12 +132,14 @@ button:hover {
 .Loading {
   height: 200px;
   width: 200px;
+  margin: 0px 20px
 }
 
 .Footer {
   background-color: black;
   color: white;
   font-size: 12px;
+  margin-top: 20px;
   padding: 2px;
   width: 100%;
 }
@@ -245,6 +233,7 @@ button:hover {
 @media screen and (max-width: 640px) {
   .Navlink {
     color: #d2453c;
+    font-size: 16px;
     font-weight: 600;
   }
 
@@ -290,6 +279,7 @@ button:hover {
 @media screen and (max-width: 500px) {
   .Navlink {
     color: #d2453c;
+    font-size: 16px;
     font-weight: 600;
   }
 

@@ -5,6 +5,7 @@
 
 import React from 'react'
 import Axios from 'axios'
+import Moment from 'moment'
 import signs from '../data/signs'
 
 class Profile extends React.Component {
@@ -33,16 +34,19 @@ class Profile extends React.Component {
     render() {
         const sign = this.state.sign
         const image = this.state.image
-        const date = this.state.date
+        const date = (this.state.date, Moment().format("MMM Do YYYY"))
         const horoscope = this.state.horoscope
 
         return(
             <div className="Profile">
                 <div className="Horoscope">
-                    { image ? <img className="Image" src={image} alt={sign}/> : 
+                    { image ? 
+                    <div>
+                        <img className="Image" src={image} alt={sign}/>
+                        <h3>Today {date}</h3>
+                        < p>{horoscope}</p>
+                    </div> : 
                     <img className="Loading" src="https://i.imgur.com/H2NLeMT.gif" alt="Loading"/> }
-                    <h3>{date}</h3>
-                    <p>{horoscope}</p>
                 </div>
             </div>
         )
