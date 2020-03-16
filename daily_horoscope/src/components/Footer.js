@@ -8,12 +8,13 @@ import React from 'react'
 function Footer() {
   return (
     <div className="Footer">
-     <p>&copy; SAMANTHA RUSSELL<br/>
-     HOROSCOPES POWERED BY <a href="http://ohmanda.com/api/horoscope/" 
-        target="_blank" rel="noopener noreferrer" >ASTROLOGY API</a><br/>
-     IMAGES POWERED BY <a href="https://astrostyle.com/" 
-        target="_blank" rel="noopener noreferrer" >ASTRO STYLE</a>
-    </p>
+      <hr />
+        <p>
+          <a href="https://github.com/swr127"><img src="https://i.imgur.com/5KK8yEl.png" width="40px" height="40px" /></a>            
+          <a href="https://www.linkedin.com/in/swr127/"><img src="https://i.imgur.com/Wrxz7wH.png" width="40px" height="40px" /></a>
+          <br />
+          &copy; 2020 SAMANTHA RUSSELL
+        </p>
     </div>
   )
 }
