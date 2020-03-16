@@ -4,7 +4,7 @@
 
 The **Daily Horoscope** is an application that leverages the Astrology API to provide users with their daily horoscope.
 
-Live App: daily-horoscope.surge.sh
+Live App: https:/daily-horoscope.surge.sh
 
 ## Project Schedule
 
